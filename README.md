@@ -111,7 +111,7 @@ The next step is to find the radius with the diameter, which is done by halving 
 float r = D / 2;
 ```
 
-Then an expanded surface area formula for a cylinder is followed. The only real difference being that instead of finding the area of two cylinders the program will find the area of whatever *circleCount* is equal to in float form. Then the resultant float is returned. Also the radius is substituted from the variable r.
+Then an expanded surface area formula for a cylinder is followed. The only real difference being that instead of finding the area of two cylinders the program will find the area of whatever *circleCount* is equal to in float form. Then the resultant float is returned. Also the radius is substituted from the variable *r*.
 
 ```csharp
 // 2 * pi * r * h + circleCount(how many circles are visible on cylinder) * pi * r^2
