@@ -239,7 +239,7 @@ runningtotal += 2 * RectprismV(LandRFoot.transform.localScale.z, LandRFoot.trans
 Debug.Log("The total volume is " + runningtotal + "cm³ or " + runningtotal/1000000 + "m³.");
 
 
-// Assigns runningtotal's value to the variable sa (surface area)
+// Assigns runningtotal's value to the variable v (volume)
 v = runningtotal;
 ```
 
