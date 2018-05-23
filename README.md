@@ -39,7 +39,7 @@ This will eventually be returned as required by the function. Next a conditional
 if (rectprismModel[0, 0] == "wl")
 ```
 
-After that the second dimension’s contents is [“parsed”](https://docs.microsoft.com/en-us/dotnet/api/system.single.parse?view=netframework-4.7.1) (In this context parsing is the process of turning a string into a float). This value is then applied to the newly named float variable wlAmount. Thus making wlAmount equal to the parsed value.
+After that the second dimension’s contents is [“parsed”](https://docs.microsoft.com/en-us/dotnet/api/system.single.parse?view=netframework-4.7.1) (In this context parsing is the process of turning a string into a float). This value is then applied to the newly named float variable *wlAmount*. Thus making *wlAmount* equal to the parsed value.
 
 ```csharp
 // Parses array for float
@@ -47,7 +47,7 @@ After that the second dimension’s contents is [“parsed”](https://docs.micr
 float wlAmount = float.Parse(rectprismModel[0, 1]);
 ```
 
-Then wlAmount is multiplied by the product of the parameters *w* (width) and *l* (length). The total is then added to variable *runningtotal*.
+Then *wlAmount* is multiplied by the product of the parameters *w* (width) and *l* (length). The total is then added to variable *runningtotal*.
 
 ```csharp
 // (either 0/1/2) * (w * l)
