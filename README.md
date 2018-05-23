@@ -207,15 +207,16 @@ runningtotal += InBetweenSides(SquareA(Torso.transform.localScale.z, Torso.trans
 runningtotal += 2 * RectprismSA(LandRFoot.transform.localScale.z, LandRFoot.transform.localScale.x, LandRFoot.transform.localScale.y, LandRFootRectPrismModel);
 // In Between Torso, Neck, Arms and Legs
 
-//Prints surface area to debug log
+// Prints surface area to debug log
 Debug.Log("The total surface area is " + runningtotal + "cm² or " + runningtotal/10000 + "m².");
+
+// Assigns runningtotal's value to the variable sa (surface area)
+sa = runningtotal;
 ```
 
 The other block calculates the total volume then prints it to the debug log.
 
 ```csharp
-sa = runningtotal;
-
 runningtotal = 0;
 
 // Start volume calculations
@@ -237,6 +238,8 @@ runningtotal += 2 * RectprismV(LandRFoot.transform.localScale.z, LandRFoot.trans
 // Prints surface area to debug log
 Debug.Log("The total volume is " + runningtotal + "cm³ or " + runningtotal/1000000 + "m³.");
 
+
+// Assigns runningtotal's value to the variable sa (surface area)
 v = runningtotal;
 ```
 
