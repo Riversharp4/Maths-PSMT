@@ -47,6 +47,12 @@ public class Main : MonoBehaviour {
         //float for adding up sides, will eventually be returned
         float runningtotal = 0;
 
+        //float for surface area
+        float sa = 0;
+
+        //float for volume
+        float v = 0;
+
         //Start surface area calculations
         //Head
         runningtotal += RectprismSA(Head.transform.localScale.z, Head.transform.localScale.x, Head.transform.localScale.y, HeadRectPrismModel);
@@ -76,6 +82,8 @@ public class Main : MonoBehaviour {
         //Prints surface area to debug log
         Debug.Log("The total surface area is " + runningtotal + "cm² or " + runningtotal/10000 + "m².");
 
+        sa = runningtotal;
+
         runningtotal = 0;
 
         //Start volume calculations
@@ -94,7 +102,13 @@ public class Main : MonoBehaviour {
         //LandRFoot
         runningtotal += 2 * RectprismV(LandRFoot.transform.localScale.z, LandRFoot.transform.localScale.x, LandRFoot.transform.localScale.y);
 
+        //Prints surface area to debug log
         Debug.Log("The total volume is " + runningtotal + "cm³ or " + runningtotal/1000000 + "m³.");
+
+        v = runningtotal;
+
+        //Surface area to volume value = SA / V
+        Debug.Log("The surface area to volume value is " + sa / v + ".");
 
 	}
 	
