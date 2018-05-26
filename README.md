@@ -278,7 +278,7 @@ float v = 0;
 // v being changed to the volume shortly after that block of calculation  
 v = runningtotal;
 
-// Surface area to volume value = SA / V
+// Surface area to volume value = sa / v
 Debug.Log("The surface area to volume value is " + sa / v + ".");
 ```
 This final answer is then displayed in the debug log.
