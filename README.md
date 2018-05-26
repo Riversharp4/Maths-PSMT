@@ -269,8 +269,14 @@ To work out the surface area to volume value, the surface area variable named at
 // float for surface area used in surface area to volume calculations
 float sa = 0;
 
+// sa being changed to the surface area shortly after that block of calculation
+sa = runningtotal;
+
 // float for volume used in surface area to volume calculations
 float v = 0;
+
+// v being changed to the volume shortly after that block of calculation  
+v = runningtotal;
 
 // Surface area to volume value = SA / V
 Debug.Log("The surface area to volume value is " + sa / v + ".");
