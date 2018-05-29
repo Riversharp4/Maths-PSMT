@@ -1,7 +1,7 @@
 
 # Maths PSMT
 
-Welcome to the landing page for my Maths PSMT, you can find the link to the [GitHub repository here](https://github.com/Riversharp4/Maths-PSMT) and the link to the [program here](https://github.com/Riversharp4/Maths-PSMT/blob/master/MathsPSMT/Assets/Scripts/Main.cs) and also the full explanation for the program below because I wanted to save some trees.
+Welcome to the landing page for my Maths PSMT, you can find the link to the [GitHub repository here](https://github.com/Riversharp4/Maths-PSMT) and the link to the [program here](https://github.com/Riversharp4/Maths-PSMT/blob/master/MathsPSMT/Assets/Scripts/Main.cs) and also the full explanation for the program below.
 
 # Explanation of Program
 
