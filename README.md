@@ -205,7 +205,6 @@ runningtotal += 2 * CylinderSA(LandRLeg.transform.localScale.x, LandRLeg.transfo
 runningtotal += InBetweenSides(SquareA(Torso.transform.localScale.z, Torso.transform.localScale.x), 2 * CircleA(LandRLeg.transform.localScale.x));
 // LandRFoot
 runningtotal += 2 * RectprismSA(LandRFoot.transform.localScale.z, LandRFoot.transform.localScale.x, LandRFoot.transform.localScale.y, LandRFootRectPrismModel);
-// In Between Torso, Neck, Arms and Legs
 
 // Prints surface area to debug log
 Debug.Log("The total surface area is " + runningtotal + "cm² or " + runningtotal/10000 + "m².");

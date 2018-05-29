@@ -41,8 +41,8 @@ public class Main : MonoBehaviour {
     //Array used in RectPrismSA Function - represents what sides are visible 
     public string[,] LandRFootRectPrismModel = { { "wl", "1" }, { "hl", "2" }, { "hw", "2" } };
 
-	// Use this for initialization
-	void Start () 
+    // Use this for initialization
+	void Start() 
 	{
         //float for adding up sides, will eventually be returned
         float runningtotal = 0;
@@ -76,7 +76,6 @@ public class Main : MonoBehaviour {
         runningtotal += InBetweenSides(SquareA(Torso.transform.localScale.z, Torso.transform.localScale.x), 2 * CircleA(LandRLeg.transform.localScale.x));
         //LandRFoot
         runningtotal += 2 * RectprismSA(LandRFoot.transform.localScale.z, LandRFoot.transform.localScale.x, LandRFoot.transform.localScale.y, LandRFootRectPrismModel);
-        //In Between Torso, Neck, Arms and Legs
 
 
         //Prints surface area to debug log
@@ -254,5 +253,5 @@ public class Main : MonoBehaviour {
 		return (C) / (2 * Mathf.PI);
 	}
 
-    /*/// By Nikhila Gurusinghe ///*/
+    /* // By Nikhila Gurusinghe // */
 }
