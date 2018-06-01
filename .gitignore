@@ -10,5 +10,6 @@ ehthumbs.db
 Thumbs.db
 #.gitignore#
 #README.md#
-.#default.html
+.#default.html#
 \#\.gitignore#
+.#.gitignore
