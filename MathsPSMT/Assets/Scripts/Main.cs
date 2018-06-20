@@ -118,6 +118,12 @@ public class Main : MonoBehaviour {
 
     //Maths Functions
 
+    /// <summary>
+    /// Takes away the face of one 3D shape from another. This function always returns a positive number.
+    /// </summary>
+    /// <returns>The result of taking one face from another.</returns>
+    /// <param name="sideA">A single face of a 3D shape.</param>
+    /// <param name="sideB">Another single face of a 3D shape..</param>
     public float InBetweenSides(float sideA, float sideB)
     {
         //Makes sure that the answer will be positive
@@ -131,12 +137,23 @@ public class Main : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Finds the area of a square.
+    /// </summary>
+    /// <returns>The area of the square</returns>
+    /// <param name="l">The Length of the square.</param>
+    /// <param name="w">The width of the square.</param>
     public float SquareA(float l, float w)
     {
         //l * w
         return l * w;
     }
 
+    /// <summary>
+    /// Finds the area of a circle.
+    /// </summary>
+    /// <returns>The area of the circle.</returns>
+    /// <param name="D">The diameter of the circle.</param>
     public float CircleA(float D)
     {
         //finds radius from halving the diameter
@@ -146,19 +163,37 @@ public class Main : MonoBehaviour {
         return Mathf.PI * Mathf.Pow(r, 2);
     }
 
+    /// <summary>
+    /// Finds the total surface area of a cube.
+    /// </summary>
+    /// <returns>The total surface area of the cube.</returns>
+    /// <param name="s">The length of one side.</param>
+    /// <param name="visibleSides">The amount of visible sides on the cube, the default being 6.</param>
 	public float CubeSA(float s, int visibleSides = 6)
 	{
 		//6(by default, unless otherwise) * s^2 
 		return visibleSides * Mathf.Pow(s, 2);
 	}
 
+    /// <summary>
+    /// Finds the volume of a cube.
+    /// </summary>
+    /// <returns>The volume of a cube.</returns>
+    /// <param name="s">The length of one side.</param>
     public float CubeV(float s)
 	{
 		//s^3
 		return Mathf.Pow(s, 3);
 	}
 
-
+    /// <summary>
+    /// Finds the total surface area of a rectangular prism.
+    /// </summary>
+    /// <returns>The total surface area of the rectangular prism.</returns>
+    /// <param name="l">The length of the rectangular prism.</param>
+    /// <param name="w">The width of the rectangular prism.</param>
+    /// <param name="h">The height of the rectangular prism.</param>
+    /// <param name="rectprismModel">A multidimensional array which represents how many sides are visible on the rectangular prism.</param>
 	public float RectprismSA(float l, float w, float h, string[,] rectprismModel)
 	{
         //float for adding up sides, will eventually be returned
@@ -201,6 +236,13 @@ public class Main : MonoBehaviour {
 		return runningtotal;
 	}
    
+    /// <summary>
+    /// Finds the volume of a rectangular prism.
+    /// </summary>
+    /// <returns>The volume of the rectangular prism.</returns>
+    /// <param name="l">The length of the rectangular prism.</param>
+    /// <param name="w">The width of the rectangular prism.</param>
+    /// <param name="h">The height of the rectangular prism.</param>
     public float RectprismV(float l, float w, float h)
 	{
 		//l * w * h
@@ -208,8 +250,18 @@ public class Main : MonoBehaviour {
 	}
 
     //Enum data types for amount of cylinder circles
+    /// <summary>
+    /// Enumerator list which specifies the amount of circles visible on a cylinder
+    /// </summary>
 	public enum CylinderCircleCount { zero = 0, one = 1 , two = 2 };
 
+    /// <summary>
+    /// Funds the total surface area of a cylinder.
+    /// </summary>
+    /// <returns>The total surface area of the cylinder.</returns>
+    /// <param name="D">The diameter of the cylinder.</param>
+    /// <param name="h">The height of the cylinder.</param>
+    /// <param name="circleCount">The amount of circles visible on the cylinder, by default this value is 2.</param>
     public float CylinderSA(float D, float h, CylinderCircleCount circleCount = CylinderCircleCount.two)
 	{
 		//finds radius from halving the diameter
@@ -220,6 +272,12 @@ public class Main : MonoBehaviour {
 
 	}
 
+    /// <summary>
+    /// Finds the volume of a cylinder
+    /// </summary>
+    /// <returns>The volume of the cylinder.</returns>
+    /// <param name="D">The diameter of the cylinder.</param>
+    /// <param name="h">The height of the cylinder.</param>
     public float CylinderV(float D, float h)
 	{
 		//finds radius from halving the diameter
@@ -229,6 +287,11 @@ public class Main : MonoBehaviour {
 		return Mathf.PI * Mathf.Pow(r, 2) * h;
 	}
 
+    /// <summary>
+    /// Finds the total surface area of a sphere
+    /// </summary>
+    /// <returns>The total surface area of the sphere.</returns>
+    /// <param name="D">The diameter of the sphere.</param>
     public float SphereSA(float D)
 	{
 		//finds radius from halving the diameter
@@ -238,6 +301,11 @@ public class Main : MonoBehaviour {
 		return 4 * Mathf.PI * Mathf.Pow(r, 2);
 	}
 
+    /// <summary>
+    /// Finds the volume of a sphere.
+    /// </summary>
+    /// <returns>The volume of the sphere.</returns>
+    /// <param name="D">The diameter of the sphere.</param>
     public float SphereV(float D)
 	{
 		//finds radius from halving the diameter
@@ -247,6 +315,11 @@ public class Main : MonoBehaviour {
 		return (4 / 3) * Mathf.PI * Mathf.Pow(r, 3);
 	}
 
+    /// <summary>
+    /// Changes the circumference into the radius
+    /// </summary>
+    /// <returns>The radius.</returns>
+    /// <param name="C">The circumference.</param>
     public float Circumference2Radius(float C)
 	{
 		//C / (2 * pi)
