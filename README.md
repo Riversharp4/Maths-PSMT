@@ -18,7 +18,7 @@ public float RectprismSA(float l, float w, float h, string[,] rectprismModel)
 
 ### RectprismSA
 
-The functions parameters are the floats *l* (length), *w* (width), *h* (height) and a [multidimensional array](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays) of 2 dimensions called *rectprismModel*. This multidimensional array stores 3 pairs with one set of these pairs representing the 3 possible side combinations on a rectangular prism (*wl*, *hl* and *hw*). The other pair stores a number indicating how much of the corresponding side is actually needed in the final calculation. Below is an example of such an array named in the initial variables.
+The function's parameters are the floats *l* (length), *w* (width), *h* (height) and a [multidimensional array](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays) of 2 dimensions called *rectprismModel*. This multidimensional array stores 3 pairs with one set of these pairs representing the 3 possible side combinations on a rectangular prism (*wl*, *hl* and *hw*). The other pair stores a number indicating how much of the corresponding side is actually needed in the final calculation. Below is an example of such an array named in the initial variables.
 
 ```csharp
 // Array used in RectPrismSA Function - represents what sides are visible 
